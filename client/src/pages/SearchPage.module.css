@@ -1,0 +1,83 @@
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.filterForm { margin-bottom: 1.25rem; }
+
+.filterRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.searchField { flex: 1 1 240px; }
+.filterGroup { flex: 0 1 160px; }
+
+.suggestion {
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.suggNote { font-size: 0.78rem; color: var(--color-muted); }
+
+.resultCount {
+  font-size: 0.88rem;
+  color: var(--color-muted);
+  margin-bottom: 0.75rem;
+}
+
+.results { }
+
+.cardHeader { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; }
+.cardTitle  { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; }
+
+.cardMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.location { font-size: 0.8rem; color: var(--color-muted); }
+
+.desc  { font-size: 0.88rem; color: var(--color-muted); margin: 0.4rem 0; line-height: 1.55; }
+
+.skills { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem; }
+
+.hours { font-size: 0.8rem; color: var(--color-muted); display: block; margin-top: 0.4rem; }
+
+.empty { color: var(--color-muted); font-size: 0.95rem; padding: 2rem 0; }
+
+.error {
+  color: var(--color-error);
+  background: #FEF2F2;
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.pageInfo { font-size: 0.88rem; color: var(--color-muted); }

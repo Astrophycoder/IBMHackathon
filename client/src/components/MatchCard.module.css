@@ -1,0 +1,90 @@
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s;
+}
+.card:hover { box-shadow: var(--shadow-md); }
+.card.ineligible { opacity: 0.75; border-color: #FECACA; }
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.scoreWrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+.score      { font-size: 1.75rem; font-weight: 700; color: var(--color-teal); }
+.scoreLabel { font-size: 0.85rem; color: var(--color-muted); }
+.scoreNote  { font-size: 0.7rem; color: var(--color-muted); align-self: flex-end; }
+
+.ineligibleBanner {
+  background: #FEF2F2;
+  color: #991B1B;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.components { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem; }
+
+.component {}
+.componentHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+.componentLabel { color: var(--color-muted); }
+.componentValue { font-weight: 600; color: var(--color-text); }
+
+.barTrack {
+  height: 6px;
+  background: #E2E8F0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.barFill {
+  height: 100%;
+  background: var(--color-green);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+.skillsLabel { color: var(--color-muted); font-size: 0.8rem; }
+
+.reasons {
+  list-style: none;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.5rem;
+}
+.reasons li::before { content: '• '; }

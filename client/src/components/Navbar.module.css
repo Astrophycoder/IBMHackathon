@@ -1,0 +1,104 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logoMark {
+  background: var(--color-teal);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-teal);
+  letter-spacing: -0.02em;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  text-decoration: none;
+  transition: background 0.12s, color 0.12s;
+  min-height: 36px;
+}
+
+.navLink:hover {
+  background: var(--color-mint);
+  color: var(--color-teal);
+  text-decoration: none;
+}
+
+.navLink.active {
+  background: var(--color-mint);
+  color: var(--color-teal);
+  font-weight: 600;
+}
+
+.userArea {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.userBadge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-teal);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .logoText { display: none; }
+  .navList  { gap: 0; }
+  .navLink  { padding: 0.4rem 0.5rem; font-size: 0.8rem; }
+}
